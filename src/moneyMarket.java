@@ -1,5 +1,6 @@
 
-public class moneyMarket extends bankAccount{
+public class moneyMarket implements Bank{
 
+	
 	
 }
