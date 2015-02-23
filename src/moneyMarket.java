@@ -1,5 +1,5 @@
 
-public class moneyMarket {
+public class moneyMarket extends bankAccount{
 
 	
 }
