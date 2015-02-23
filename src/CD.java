@@ -1,4 +1,4 @@
 
-public class CD implements Bank{
+public class CD extends bankAccount{
 
 }

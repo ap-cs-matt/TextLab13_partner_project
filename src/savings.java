@@ -1,4 +1,4 @@
 
-public class savings implements Bank{
+public class savings extends bankAccount{
 
 }

@@ -1,6 +1,8 @@
 
-public class moneyMarket implements Bank{
+public class moneyMarket extends bankAccount{
 
-	
+	public moneyMarket(){
+		
+	}
 	
 }
