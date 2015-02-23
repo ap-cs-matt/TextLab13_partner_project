@@ -2,7 +2,7 @@
 public class Checking extends bankAccount{
 
 	public Checking(){
-		
+		System.out.println("A new checking accounts was created");
 	}
 	
 	public void issureCard() {
