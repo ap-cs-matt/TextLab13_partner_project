@@ -34,4 +34,10 @@ public class savings extends bankAccount{
 		
 	}
 
+	@Override
+	public void getAdress() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

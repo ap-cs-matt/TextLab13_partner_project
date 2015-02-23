@@ -1,6 +1,8 @@
 
 public abstract class bankAccount implements Bank{
 	
+	Customer tempCustomer = new Customer();
+	
 	public void getBankInfo() {
 	}
 	public void setBankInfo() {
@@ -9,9 +11,10 @@ public abstract class bankAccount implements Bank{
 	}
 	public void assignAgent() {
 	}
+	
 	public void getCreditScore() {
 	}
-	public void getAdress() {
+	public void getAddress() {
 	}
 	public void getBankAccountNum() {
 	}
@@ -20,10 +23,14 @@ public abstract class bankAccount implements Bank{
 	public void getBalance(){
 		
 	}
+	public void getSocialSecurity(){
+		
+	}
 	
 	
 	
 	
+		
 	public abstract void issureCard();
 	public abstract void getFutureBalance(); // calculates the future based on the different intersets rates and different parameters
 	public abstract void getWithdrawalPolicy();

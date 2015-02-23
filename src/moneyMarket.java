@@ -34,5 +34,12 @@ public class moneyMarket extends bankAccount{
 		// TODO Auto-generated method stub
 		
 	}
+
+
+	@Override
+	public void getAdress() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

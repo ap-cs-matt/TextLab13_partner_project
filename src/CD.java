@@ -34,4 +34,10 @@ public class CD extends bankAccount{
 		
 	}
 
+	@Override
+	public void getAdress() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
