@@ -20,7 +20,7 @@ public abstract class bankAccount implements Bank{
 	
 	
 	
-	public void getBalance();
-	public void issureCard();
+	public abstract void getBalance();
+	public abstract void issureCard();
 
 }
