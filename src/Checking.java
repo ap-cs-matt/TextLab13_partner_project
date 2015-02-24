@@ -48,7 +48,7 @@ public class Checking extends commonBank {
 
 	}
 
-	public void withdraw(int amount) {
+	public void withdraw(Double amount) {
 
 		tempCustomer.setBalance((tempCustomer.getBalance() - amount));
 	}
@@ -64,4 +64,6 @@ public class Checking extends commonBank {
 		return tempCustomer.toString();
 
 	}
+
+
 }
