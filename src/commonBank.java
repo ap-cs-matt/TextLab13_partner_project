@@ -77,6 +77,6 @@ public abstract class commonBank implements Bank {
 	public abstract void deposit(Double amount); // has different effect for differiendr
 									// accounts
 
-	public abstract void withdraw(int amount); // some accounts have penalites
+	public abstract void withdraw(Double amount); // some accounts have penalites
 
 }
