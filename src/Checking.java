@@ -1,5 +1,5 @@
 
-public class Checking extends bankAccount{
+public class Checking extends commonBank{
 
 	public Checking(){
 		System.out.println("A new checking accounts was created");

@@ -1,5 +1,5 @@
 
-public class savings extends bankAccount{
+public class savings extends commonBank{
 
 	public savings(){
 		

@@ -1,5 +1,5 @@
 
-public class CD extends bankAccount{
+public class CD extends commonBank{
 
 	public CD(){
 		

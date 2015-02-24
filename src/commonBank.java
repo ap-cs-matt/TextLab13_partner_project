@@ -1,5 +1,5 @@
 
-public abstract class bankAccount implements Bank{
+public abstract class commonBank implements Bank{
 	
 	Customer tempCustomer = new Customer();
 	
