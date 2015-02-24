@@ -58,23 +58,25 @@ public abstract class commonBank implements Bank {
 		tempCustomer.setSocialSecurity(socialSecurity);
 	}
 
-	public String generateSocialSecurity(){
-		 
+	public String generateSocialSecurity() {
+
 		return UUID.randomUUID().toString();
-		
+
 	}
-	
-	
-	
+
 	public abstract void assignCustomerID();
+
 	public abstract void issureCard();
 
 	public abstract void getFutureBalance(); // calculates the future based on
 												// the different intersets rates
 												// and different parameters
+
 	public abstract void getWithdrawalPolicy();
+
 	public abstract void deposit(); // has different effect for differiendr
 									// accounts
+
 	public abstract void withdraw(int amount); // some accounts have penalites
 
 }

@@ -26,7 +26,7 @@ public class Customer {
 	}
 
 	public Double getBalance() {
-		return  balance;
+		return balance;
 
 	}
 
@@ -49,19 +49,16 @@ public class Customer {
 		return address;
 
 	}
-	public String getAgent(){
+
+	public String getAgent() {
 		return agent;
-		
+
 	}
-	public String getCustomerID(){
+
+	public String getCustomerID() {
 		return CustomerID;
 	}
 
-	
-	
-	
-	
-	
 	public void setFirstName(String firstName) {
 
 		this.firstName = firstName;
@@ -97,21 +94,22 @@ public class Customer {
 
 		this.address = address;
 	}
-	
-	public void setAgent(String agent){
+
+	public void setAgent(String agent) {
 		this.agent = agent;
-		
+
 	}
-	
-	public void setCustomerID(String CustomerID){
-		this.CustomerID =  CustomerID;
+
+	public void setCustomerID(String CustomerID) {
+		this.CustomerID = CustomerID;
 	}
 
 	public String toString() {
 		return (("Full Name: " + firstName + " " + lastName) + "\nBalance: $"
 				+ balance + "\nCredit Score: " + creditScore
 				+ "\nSocial Security: " + socialSecurity + "\nAddress: "
-				+ address + "\nPhone Number: " + phoneNumber + "\nCustomer ID: " + CustomerID + "\nAgent: " + agent);
+				+ address + "\nPhone Number: " + phoneNumber
+				+ "\nCustomer ID: " + CustomerID + "\nAgent: " + agent);
 
 	}
 }
