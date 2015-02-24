@@ -1,4 +1,3 @@
-import java.util.UUID;
 import java.util.*;
 
 public class TextLab13Main {
@@ -24,4 +23,7 @@ public class TextLab13Main {
 		  System.out.println(aleksa);
 		 
 	}
+	
+	
+	public static ArrayList Customer = new ArrayList();
 }

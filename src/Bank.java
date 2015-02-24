@@ -24,7 +24,7 @@ public abstract interface Bank {
 
 	public void assignAgent();
 
-	public abstract void issureCard();
+	public abstract void issueCard();
 
 	public abstract void deposit(Double amount); // has different effect for differiendr
 									// accounts

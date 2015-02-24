@@ -66,7 +66,7 @@ public abstract class commonBank implements Bank {
 
 	public abstract void assignCustomerID();
 
-	public abstract void issureCard();
+	public abstract void issueCard();
 
 	public abstract Double getFutureBalance(int months); // calculates the future based on
 												// the different intersets rates

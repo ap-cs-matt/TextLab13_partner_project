@@ -23,8 +23,8 @@ public class Checking extends commonBank {
 		tempCustomer.setBalance(0.0);
 	}
 
-	public void issureCard() {
-		// TODO Auto-generated method stub
+	public void issueCard() {
+		System.out.println("A card has been issued");
 
 	}
 
@@ -64,6 +64,4 @@ public class Checking extends commonBank {
 		return tempCustomer.toString();
 
 	}
-
-
 }
