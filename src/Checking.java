@@ -17,7 +17,7 @@ public class Checking extends commonBank{
 
 	
 	public void getWithdrawalPolicy() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -28,14 +28,15 @@ public class Checking extends commonBank{
 	}
 
 	
-	public void withdraw() {
-		// TODO Auto-generated method stub
+	public void withdraw(int amount) {
+		
+		
+		tempCustomer.setBalance((tempCustomer.getBalance()- amount));
 		
 	}
 
-	@Override
-	public void getAdress() {
-		// TODO Auto-generated method stub
+	public String toString(){
+		return null;
 		
-	}	
+	}
 }
