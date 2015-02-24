@@ -18,7 +18,7 @@ public class DataGenerator {
 
 	public static String generateAddress() {
 
-		String[] streetTypes = { "St.", "Dr.", "Ln", "Ct.", "Rd.", "Ave." };
+		String[] streetTypes = { "St.", "Dr.", "Ln.", "Ct.", "Rd.", "Ave." };
 		String[] streetNames = { "Linden", "Cherry", "Maple", "Andover",
 				"Grove", "Main", "Garden" };
 

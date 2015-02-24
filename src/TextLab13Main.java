@@ -12,5 +12,13 @@ public class TextLab13Main {
 				DataGenerator.generateAddress());
 
 		System.out.println(matt);
+		
+		Bank aleksa = new moneyMarket("Aleksa", "Djeric",
+				DataGenerator.generateCreditScore(),
+				DataGenerator.generatePhoneNumber(),
+				DataGenerator.generateSocialSecurity(),
+				DataGenerator.generateAddress());
+
+		System.out.println(aleksa);
 	}
 }
