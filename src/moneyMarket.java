@@ -3,6 +3,8 @@ public class moneyMarket extends commonBank {
 	
 	final int maxW = 6;
 	int timesWdrwn = 0;
+	final private Double interestRate = .01;
+	
 	public moneyMarket() {
 		System.out.println("A Money Market Account Was Created\n");
 		assignCustomerID();
@@ -23,26 +25,21 @@ public class moneyMarket extends commonBank {
 	}
 	
 	
-	public void issueCard() {
-		// TODO Auto-generated method stub
+	
 
-	}
-
-	public void getFutureBalance() {
-		// TODO Auto-generated method stub
-
+	public Double getFutureBalance(int months) {
+		Double futureBalance;
+		futureBalance = tempCustomer.getBalance() + (months * interestRate * tempCustomer.getBalance());
+		return futureBalance;
 	}
 
 	public String getWithdrawalPolicy() {
-		System.out.println("");
+		System.out.println("This account allows you to withdraw your money up to 6 times a month in return for a higher rate of interest.");
 		return "";
 
 	}
 
-	public void deposit() {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 	public void withdraw(Double amount) {
 		if (maxW > timesWdrwn)
@@ -58,11 +55,6 @@ public class moneyMarket extends commonBank {
 		
 	}
 
-	
-	public void getAddress() {
-		// TODO Auto-generated method stub
-
-	}
 
 	public void assignCustomerID() {
 		
@@ -76,21 +68,15 @@ public class moneyMarket extends commonBank {
 		return tempCustomer.toString();
 
 	}
-
-	@Override
-	public void issureCard() {
-		// TODO Auto-generated method stub
+	public void issueCard() {
+		
 		
 	}
-	@Override
-	public Double getFutureBalance(int months) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
 	public void deposit(Double amount) {
-		// TODO Auto-generated method stub
+		
 		
 	}
+
+
 
 }
