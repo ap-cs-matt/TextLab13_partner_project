@@ -2,7 +2,21 @@
 public class Checking extends commonBank{
 
 	public Checking(){
-		System.out.println("A new checking accounts was created");
+		System.out.println("A Checking Account Was Created\n");
+		assignCustomerID();
+	}
+	public Checking(String firstName, String lastName, int creditScore, String phoneNumber, String SocialSecurity){
+
+		System.out.println("A Checking Account Was Created\n");
+		assignCustomerID();
+		tempCustomer.setFirstName(firstName);
+		tempCustomer.setLastName(lastName);
+		tempCustomer.setPhoneNumber(phoneNumber);
+		tempCustomer.setCreditScore(creditScore);
+		tempCustomer.setBalance(0.0);
+		assignAgent();
+		setSocialSecurity(SocialSecurity);
+		
 	}
 	
 	public void issureCard() {
@@ -34,8 +48,18 @@ public class Checking extends commonBank{
 	}
 
 	public String toString(){
-		return null;
+		return tempCustomer.toString();
 		
 	}
+
 	
+	public void assignCustomerID() {
+		
+		int rand = (int)(Math.random()*1000000)+32343;
+		tempCustomer.setCustomerID("CHK-" + rand);
+		
+	}
+
+	
+
 }

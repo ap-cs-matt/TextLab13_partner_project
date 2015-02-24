@@ -2,8 +2,6 @@
 public abstract interface Bank {
 
 	public Double getBalance();
-
-	
 	public void getBankInfo();
 	public void setBankInfo();
 	public void getInsurancePolicy();
@@ -18,5 +16,6 @@ public abstract interface Bank {
 	public abstract void issureCard();
 	public abstract void deposit(); //has different effect for differiendr accounts
 	public abstract void withdraw(int amount); // some accounts have penalites
+	public void assignCustomerID(); 
 	
 }

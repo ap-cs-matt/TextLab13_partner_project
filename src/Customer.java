@@ -6,9 +6,10 @@ public class Customer {
 	private Double balance;
 	private int creditScore;
 	private String socialSecurity;
-	private int phoneNumber;
+	private String phoneNumber;
 	private String address;
 	private String agent;
+	private String CustomerID;
 
 	public Customer() {
 
@@ -39,8 +40,8 @@ public class Customer {
 
 	}
 
-	public int getPhoneNumber() {
-		return creditScore;
+	public String getPhoneNumber() {
+		return phoneNumber;
 
 	}
 
@@ -51,6 +52,9 @@ public class Customer {
 	public String getAgent(){
 		return agent;
 		
+	}
+	public String getCustomerID(){
+		return CustomerID;
 	}
 
 	
@@ -84,9 +88,9 @@ public class Customer {
 		this.socialSecurity = socialSecurity;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(String phoneNumber2) {
 
-		this.phoneNumber = phoneNumber;
+		this.phoneNumber = phoneNumber2;
 	}
 
 	public void setAddress(String address) {
@@ -98,12 +102,16 @@ public class Customer {
 		this.agent = agent;
 		
 	}
+	
+	public void setCustomerID(String CustomerID){
+		this.CustomerID =  CustomerID;
+	}
 
 	public String toString() {
 		return (("Full Name: " + firstName + " " + lastName) + "\nBalance: "
 				+ balance + "\nCredit Score: " + creditScore
 				+ "\nSocial Security: " + socialSecurity + "\nAddress: "
-				+ address + "\nPhone Number: " + phoneNumber);
+				+ address + "\nPhone Number: " + phoneNumber + "\nCustomer ID: " + CustomerID + "\nAgent: " + agent);
 
 	}
 }

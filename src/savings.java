@@ -33,6 +33,11 @@ public class savings extends commonBank{
 		// TODO Auto-generated method stub
 		
 	}
-
+	public void assignCustomerID() {
+		
+		int rand = (int)(Math.random()*1000000)+32343;
+		tempCustomer.setCustomerID("SV-" + rand);
+		
+	}
 
 }
