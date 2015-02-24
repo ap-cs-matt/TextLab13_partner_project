@@ -1,5 +1,8 @@
 public class Checking extends commonBank {
 
+	private String withdrawalPolicy = "Withdrawal Policy for Checking: There is no penalalty fir withdrawing money";
+	private Double interestRate = .0001;
+
 	public Checking() {
 		System.out.println("A Checking Account Was Created\n");
 		assignCustomerID();
@@ -25,17 +28,23 @@ public class Checking extends commonBank {
 
 	}
 
-	public void getFutureBalance() { // calculates based on interest
-		// TODO Auto-generated method stub
+	public Double getFutureBalance(int months) { // calculates based on interest
+		
+		Double futureBalance;
+		futureBalance = tempCustomer.getBalance() + (months * interestRate * tempCustomer.getBalance());
+		
+		
+		return futureBalance;
 
 	}
 
-	public void getWithdrawalPolicy() {
+	public String getWithdrawalPolicy() {
 
+		return withdrawalPolicy;
 	}
 
-	public void deposit() {
-		// TODO Auto-generated method stub
+	public void deposit(Double amount) {
+		tempCustomer.setBalance(tempCustomer.getBalance() + amount);
 
 	}
 
@@ -55,5 +64,4 @@ public class Checking extends commonBank {
 		return tempCustomer.toString();
 
 	}
-
 }

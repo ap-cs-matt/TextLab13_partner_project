@@ -16,9 +16,9 @@ public abstract interface Bank {
 
 	public void getPhoneNum();
 
-	public abstract void getWithdrawalPolicy();
+	public abstract String getWithdrawalPolicy();
 
-	public abstract void getFutureBalance(); // calculates the future based on
+	public abstract Double getFutureBalance(int months); // calculates the future based on
 												// the different intersets rates
 												// and different parameters
 
@@ -26,7 +26,7 @@ public abstract interface Bank {
 
 	public abstract void issureCard();
 
-	public abstract void deposit(); // has different effect for differiendr
+	public abstract void deposit(Double amount); // has different effect for differiendr
 									// accounts
 
 	public abstract void withdraw(int amount); // some accounts have penalites
