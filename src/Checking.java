@@ -5,7 +5,7 @@ public class Checking extends commonBank{
 		System.out.println("A Checking Account Was Created\n");
 		assignCustomerID();
 	}
-	public Checking(String firstName, String lastName, int creditScore, String phoneNumber, String SocialSecurity){
+	public Checking(String firstName, String lastName, int creditScore, String phoneNumber, String SocialSecurity,String adress){
 
 		System.out.println("A Checking Account Was Created\n");
 		assignCustomerID();
@@ -14,6 +14,8 @@ public class Checking extends commonBank{
 		tempCustomer.setPhoneNumber(phoneNumber);
 		tempCustomer.setCreditScore(creditScore);
 		tempCustomer.setBalance(0.0);
+		tempCustomer.setBalance(0.0);
+		tempCustomer.setAddress(adress);
 		assignAgent();
 		setSocialSecurity(SocialSecurity);
 		
@@ -24,7 +26,7 @@ public class Checking extends commonBank{
 		
 	}
 
-	public void getFutureBalance() {
+	public void getFutureBalance() { // calculates based on interest
 		// TODO Auto-generated method stub
 		
 	}
@@ -59,7 +61,4 @@ public class Checking extends commonBank{
 		tempCustomer.setCustomerID("CHK-" + rand);
 		
 	}
-
-	
-
 }

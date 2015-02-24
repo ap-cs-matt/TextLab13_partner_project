@@ -26,7 +26,7 @@ public class Customer {
 	}
 
 	public Double getBalance() {
-		return balance;
+		return  balance;
 
 	}
 
@@ -108,7 +108,7 @@ public class Customer {
 	}
 
 	public String toString() {
-		return (("Full Name: " + firstName + " " + lastName) + "\nBalance: "
+		return (("Full Name: " + firstName + " " + lastName) + "\nBalance: $"
 				+ balance + "\nCredit Score: " + creditScore
 				+ "\nSocial Security: " + socialSecurity + "\nAddress: "
 				+ address + "\nPhone Number: " + phoneNumber + "\nCustomer ID: " + CustomerID + "\nAgent: " + agent);
