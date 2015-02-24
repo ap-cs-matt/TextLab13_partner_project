@@ -14,14 +14,14 @@ public class TextLab13Main {
 		matt.deposit(500.56);
 		System.out.println(matt + "\n\n" + matt.getFutureBalance(5));
 
-		/*
-		 * Bank aleksa = new moneyMarket("Aleksa", "Djeric",
-		 * DataGenerator.generateCreditScore(),
-		 * DataGenerator.generatePhoneNumber(),
-		 * DataGenerator.generateSocialSecurity(),
-		 * DataGenerator.generateAddress());
-		 * 
-		 * System.out.println(aleksa);
-		 */
+		
+		  Bank aleksa = new moneyMarket("Aleksa", "Djeric",
+		  DataGenerator.generateCreditScore(),
+		  DataGenerator.generatePhoneNumber(),
+		  DataGenerator.generateSocialSecurity(),
+		  DataGenerator.generateAddress());
+		  
+		  System.out.println(aleksa);
+		 
 	}
 }

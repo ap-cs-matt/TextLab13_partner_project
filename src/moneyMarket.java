@@ -33,8 +33,9 @@ public class moneyMarket extends commonBank {
 
 	}
 
-	public void getWithdrawalPolicy() {
+	public String getWithdrawalPolicy() {
 		System.out.println("");
+		return "";
 
 	}
 
