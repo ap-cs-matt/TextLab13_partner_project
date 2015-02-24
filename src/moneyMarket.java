@@ -30,14 +30,14 @@ public class moneyMarket extends commonBank{
 	}
 
 	
-	public void withdraw() {
+	public void withdraw(int amount) {
 		// TODO Auto-generated method stub
 		
 	}
 
 
 	@Override
-	public void getAdress() {
+	public void getAddress() {
 		// TODO Auto-generated method stub
 		
 	}

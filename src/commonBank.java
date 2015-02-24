@@ -34,6 +34,6 @@ public abstract class commonBank implements Bank{
 	public abstract void getFutureBalance(); // calculates the future based on the different intersets rates and different parameters
 	public abstract void getWithdrawalPolicy();
 	public abstract void deposit(); //has different effect for differiendr accounts
-	public abstract void withdraw(); // some accounts have penalites
+	public abstract void withdraw(int amount); // some accounts have penalites
 
 }

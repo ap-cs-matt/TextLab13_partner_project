@@ -9,7 +9,7 @@ public abstract interface Bank {
 	public void getInsurancePolicy();
 	public void assignAgent();
 	public void getCreditScore();
-	public void getAdress();
+	public void getAddress();
 	public void getBankAccountNum();
 	public void getPhoneNum();
 	

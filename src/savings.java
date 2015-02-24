@@ -29,15 +29,10 @@ public class savings extends commonBank{
 	}
 
 	
-	public void withdraw() {
+	public void withdraw(int amount) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void getAdress() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
