@@ -29,10 +29,8 @@ public class Checking extends commonBank{
 
 	
 	public void withdraw(int amount) {
-		
-		
+			
 		tempCustomer.setBalance((tempCustomer.getBalance()- amount));
-		
 	}
 
 	public String toString(){

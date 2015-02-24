@@ -8,6 +8,7 @@ public class Customer {
 	private String socialSecurity;
 	private int phoneNumber;
 	private String address;
+	private String agent;
 
 	public Customer() {
 
@@ -34,7 +35,7 @@ public class Customer {
 	}
 
 	public String getSocialSecurity() {
-		return address;
+		return socialSecurity;
 
 	}
 
@@ -47,7 +48,16 @@ public class Customer {
 		return address;
 
 	}
+	public String getAgent(){
+		return agent;
+		
+	}
 
+	
+	
+	
+	
+	
 	public void setFirstName(String firstName) {
 
 		this.firstName = firstName;
@@ -82,6 +92,11 @@ public class Customer {
 	public void setAddress(String address) {
 
 		this.address = address;
+	}
+	
+	public void setAgent(String agent){
+		this.agent = agent;
+		
 	}
 
 	public String toString() {

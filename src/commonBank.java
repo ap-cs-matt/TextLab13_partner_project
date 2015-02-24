@@ -10,6 +10,13 @@ public abstract class commonBank implements Bank{
 	public void getInsurancePolicy() {
 	}
 	public void assignAgent() {
+	
+		String[] freeAgents = {"Lynne Garrard" ,"Carla Marietta","Rufina Prager","Jarod Wessels","Fannie Klotz","Shonda Peed","Kaila Denardo","Helaine Brittian","Yaeko Labree","Quintin Mundo","Caitlin Ohl"};
+		
+		int rand = (int)(Math.random()*11);
+		
+		tempCustomer.setAgent(freeAgents[rand]);
+	
 	}
 	
 	public void getCreditScore() {
@@ -20,11 +27,20 @@ public abstract class commonBank implements Bank{
 	}
 	public void getPhoneNum() {
 	}
-	public void getBalance(){
-		
+	
+	public Double getBalance(){ //changing balance is done thorugh withdraw and desposit
+	
+		return tempCustomer.getBalance();
 	}
-	public void getSocialSecurity(){
+	
+	
+	public String getSocialSecurity(){
 		
+		return tempCustomer.getSocialSecurity();
+	}
+	public void setSocialSecurity(String socialSecurity){
+		
+		tempCustomer.setSocialSecurity(socialSecurity);
 	}
 	
 	
