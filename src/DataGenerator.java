@@ -30,4 +30,24 @@ public class DataGenerator {
 	public static int generateCreditScore() {
 		return (int) ((Math.random() * 300) + 500);
 	}
+
+
+	public static void simulateBankActivity(Customer customer){
+		
+		//random deposit
+		
+		//random withdrawal 
+		
+		
+		//get customer info
+		
+		
+		//get future balance
+		
+		//withdraw
+		
+		
+	}
 }
+
+

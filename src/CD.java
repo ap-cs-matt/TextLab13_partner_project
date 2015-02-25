@@ -14,7 +14,8 @@ public class CD extends commonBank {
 
 	}
 
-	public void getWithdrawalPolicy() {
+	public String getWithdrawalPolicy() {
+		return null;
 		// TODO Auto-generated method stub
 
 	}

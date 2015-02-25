@@ -4,7 +4,7 @@ public class savings extends commonBank {
 
 	}
 
-	public void issureCard() {
+	public void issueCard() {
 		// TODO Auto-generated method stub
 
 	}

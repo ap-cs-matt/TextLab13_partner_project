@@ -109,7 +109,7 @@ public class Customer {
 				+ balance + "\nCredit Score: " + creditScore
 				+ "\nSocial Security: " + socialSecurity + "\nAddress: "
 				+ address + "\nPhone Number: " + phoneNumber
-				+ "\nCustomer ID: " + CustomerID + "\nAgent: " + agent);
+				+ "\nCustomer ID: " + CustomerID + "\nAgent: " + agent + "\n\n");
 
 	}
 }
