@@ -4,13 +4,16 @@ public abstract class commonBank implements Bank {
 
 	Customer tempCustomer = new Customer();
 
-	public void getBankInfo() {
+	public String getBankInfo() {
+		return null;
 	}
 
-	public void setBankInfo() {
+	public String setBankInfo() {
+		return null;
 	}
 
-	public void getInsurancePolicy() {
+	public String getInsurancePolicy() {
+		return null;
 	}
 
 	public void assignAgent() {
@@ -26,19 +29,23 @@ public abstract class commonBank implements Bank {
 
 	}
 
-	public void getCreditScore() {
+	public String getCreditScore() {
+		return null;
 
 	}
 
-	public void getAddress() {
+	public String getAddress() {
+		return null;
 
 	}
 
-	public void getBankAccountNum() {
+	public String getBankAccountNum() {
+		return null;
 
 	}
 
-	public void getPhoneNum() {
+	public String getPhoneNum() {
+		return null;
 
 	}
 

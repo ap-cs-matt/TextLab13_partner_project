@@ -30,11 +30,7 @@ public class CD extends commonBank {
 
 	}
 
-	@Override
-	public void getAddress() {
-		// TODO Auto-generated method stub
 
-	}
 
 	public void assignCustomerID() {
 
