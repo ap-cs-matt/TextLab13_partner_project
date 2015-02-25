@@ -13,7 +13,7 @@ public class TextLab13Main {
 				DataGenerator.generateSocialSecurity(),
 				DataGenerator.generateAddress());
 
-		matt.deposit(500.56);
+		DataGenerator.simulateBankActivity(matt);
 
 		Bank aleksa = new moneyMarket("Aleksa", "Djeric",
 				DataGenerator.generateCreditScore(),

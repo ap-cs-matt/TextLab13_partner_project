@@ -32,17 +32,32 @@ public class DataGenerator {
 	}
 
 
-	public static void simulateBankActivity(Customer customer){
+	public static void simulateBankActivity(Bank customer){
 		
 		//random deposit
 		
+		int i = (int) (Math.random()*5) + 1;
+		while (i < i){
+		
+		customer.deposit(Math.random() *100000);
+		i++;
+		}
+		
+		
 		//random withdrawal 
 		
+		int k = (int) (Math.random()*5) + 1;
+		while (i < k){
 		
-		//get customer info
+		customer.withdraw(Math.random() *5000);
+		i++;
+		}
+		
 		
 		
 		//get future balance
+		
+		customer.getFutureBalance((int)(Math.random()*12)+1);
 		
 		//withdraw
 		
