@@ -14,6 +14,7 @@ public class Checking extends commonBank {
 		System.out.println("A Checking Account Was Created\n");
 		assignCustomerID();
 		assignAgent();
+		issueCard();
 		setSocialSecurity(SocialSecurity);
 		tempCustomer.setFirstName(firstName);
 		tempCustomer.setLastName(lastName);
@@ -24,7 +25,7 @@ public class Checking extends commonBank {
 	}
 
 	public void issueCard() {
-		System.out.println("A card has been issued");
+		System.out.println("A card has been issued for customer ID: " + tempCustomer.getCustomerID());
 
 	}
 
