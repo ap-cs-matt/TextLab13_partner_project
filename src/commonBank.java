@@ -29,8 +29,8 @@ public abstract class commonBank implements Bank {
 
 	}
 
-	public String getCreditScore() {
-		return null;
+	public int getCreditScore() {
+		return tempCustomer.getCreditScore();
 
 	}
 

@@ -66,6 +66,7 @@ public class moneyMarket extends commonBank {
 	public void issueCard() {
 
 		System.out.println("A card has been issued for customer ID: " + tempCustomer.getCustomerID());
+		
 	}
 
 	public void deposit(Double amount) {

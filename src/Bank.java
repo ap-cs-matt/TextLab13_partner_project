@@ -8,7 +8,7 @@ public abstract interface Bank {
 
 	public String getInsurancePolicy();
 
-	public String getCreditScore();
+	public int getCreditScore();
 
 	public String getAddress();
 
