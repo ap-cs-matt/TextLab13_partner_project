@@ -2,19 +2,19 @@ public abstract interface Bank {
 
 	public Double getBalance();
 
-	public void getBankInfo();
+	public String getBankInfo();
 
-	public void setBankInfo();
+	public String setBankInfo();
 
-	public void getInsurancePolicy();
+	public String getInsurancePolicy();
 
-	public void getCreditScore();
+	public String getCreditScore();
 
-	public void getAddress();
+	public String getAddress();
 
-	public void getBankAccountNum();
+	public String getBankAccountNum();
 
-	public void getPhoneNum();
+	public String getPhoneNum();
 
 	public abstract String getWithdrawalPolicy();
 
