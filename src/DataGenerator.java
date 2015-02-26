@@ -31,37 +31,33 @@ public class DataGenerator {
 		return (int) ((Math.random() * 300) + 500);
 	}
 
+	public static void simulateBankActivity(Bank customer) {
 
-	public static void simulateBankActivity(Bank customer){
-		
-		//random deposit
-		
-		customer.deposit((Math.random()*20000) + 100);
+		// random deposit
 
-		
-		
-		//random withdrawal 
-		
-		customer.withdraw((Math.random()*8000) + 100);
-		customer.withdraw((Math.random()*8000) + 100);
-		
-		
-		//get future balance
-		
+		customer.deposit((Math.random() * 20000) + 100);
+
+		// random withdrawal
+
+		customer.withdraw((Math.random() * 8000) + 100);
+		customer.withdraw((Math.random() * 8000) + 100);
+
+		// get future balance
+
 		int k = 0;
-		while(k<2){
-		int months = (int)(Math.random()*12)+1;
-		System.out.println( "Your balance in " + months + " months will be: $" + customer.getFutureBalance(months));
-		Double InterestGained = customer.getFutureBalance(months) - customer.getBalance();
-		System.out.println("The interest Gained is: $" + InterestGained);
-		k++;
+		while (k < 2) {
+			int months = (int) (Math.random() * 12) + 1;
+			System.out.println("Your balance in " + months
+					+ " months will be: $" + customer.getFutureBalance(months));
+			Double InterestGained = customer.getFutureBalance(months)
+					- customer.getBalance();
+			System.out.println("The interest Gained is: $" + InterestGained);
+			k++;
 		}
-		
-		//withdraw
+
+		// withdraw
 		customer.getWithdrawalPolicy();
-		
+
 		System.out.println("\n");
 	}
 }
-
-

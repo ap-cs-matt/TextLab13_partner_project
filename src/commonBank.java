@@ -8,7 +8,6 @@ public abstract class commonBank implements Bank {
 		return "The Address for the bank is: 100 Federal St. Boston, MA\nThe Phone number for the bank is: 617-343-5646";
 	}
 
-
 	public String getInsurancePolicy() {
 		return "All accounts at this bank are insured for up to $5,000,000 in theft or loss of funds";
 	}
@@ -35,7 +34,6 @@ public abstract class commonBank implements Bank {
 		return "The Address for the bank is: 100 Federal St. Boston, MA";
 
 	}
-
 
 	public String getPhoneNum() {
 		return "The Phone number for the bank is: 617-343-5646";
@@ -64,10 +62,6 @@ public abstract class commonBank implements Bank {
 
 	}
 
-	
-	
-	
-	
 	public abstract void assignCustomerID();
 
 	public abstract void issueCard();

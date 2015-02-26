@@ -4,14 +4,14 @@ public class Checking extends commonBank {
 	private Double interestRate = .0001;
 
 	public Checking() {
-		System.out.println("A Checking Account Was Created\n");
+		System.out.println("A Checking Account Was Created");
 		assignCustomerID();
 	}
 
 	public Checking(String firstName, String lastName, int creditScore,
 			String phoneNumber, String SocialSecurity, String adress) {
 
-		System.out.println("A Checking Account Was Created\n");
+		System.out.println("A Checking Account Was Created");
 		assignCustomerID();
 		assignAgent();
 		issueCard();
@@ -25,16 +25,17 @@ public class Checking extends commonBank {
 	}
 
 	public void issueCard() {
-		System.out.println("A card has been issued for customer ID: " + tempCustomer.getCustomerID());
+		System.out.println("A card has been issued for customer ID: "
+				+ tempCustomer.getCustomerID());
 
 	}
 
 	public Double getFutureBalance(int months) { // calculates based on interest
-		
+
 		Double futureBalance;
-		futureBalance = tempCustomer.getBalance() + (months * interestRate * tempCustomer.getBalance());
-		
-		
+		futureBalance = tempCustomer.getBalance()
+				+ (months * interestRate * tempCustomer.getBalance());
+
 		return futureBalance;
 
 	}

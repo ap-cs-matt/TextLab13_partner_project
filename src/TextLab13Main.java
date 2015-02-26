@@ -27,10 +27,35 @@ public class TextLab13Main {
 		System.out
 				.println("Randomly Generated Bank Activity for Customer: Aleksa\n");
 		DataGenerator.simulateBankActivity(aleksa);
-		// Add Customer
+		
+		
+		Bank Jake = new savings("Jake", "Mallard",
+				DataGenerator.generateCreditScore(),
+				DataGenerator.generatePhoneNumber(),
+				DataGenerator.generateSocialSecurity(),
+				DataGenerator.generateAddress());
+
+		System.out
+				.println("Randomly Generated Bank Activity for Customer: Jake\n");
+		DataGenerator.simulateBankActivity(Jake);
+		
+		Bank John = new CD("John", "Smith",
+				DataGenerator.generateCreditScore(),
+				DataGenerator.generatePhoneNumber(),
+				DataGenerator.generateSocialSecurity(),
+				DataGenerator.generateAddress());
+
+		System.out
+				.println("Randomly Generated Bank Activity for Customer: John\n");
+		DataGenerator.simulateBankActivity(John);
+		
+		
+		// Add Customers
 
 		CustomerDatabase.add(matt);
 		CustomerDatabase.add(aleksa);
+		CustomerDatabase.add(Jake);
+		CustomerDatabase.add(John);
 		System.out
 				.println("\n\n\n"
 						+ CustomerDatabase

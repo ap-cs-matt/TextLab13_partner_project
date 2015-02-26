@@ -5,14 +5,14 @@ public class moneyMarket extends commonBank {
 	final private Double interestRate = .01;
 
 	public moneyMarket() {
-		System.out.println("A Money Market Account Was Created\n");
+		System.out.println("A Money Market Account Was Created");
 		assignCustomerID();
 	}
 
 	public moneyMarket(String firstName, String lastName, int creditScore,
 			String phoneNumber, String SocialSecurity, String adress) {
 
-		System.out.println("A Money Market Account Was Created\n");
+		System.out.println("A Money Market Account Was Created");
 		assignCustomerID();
 		assignAgent();
 		issueCard();
@@ -43,8 +43,8 @@ public class moneyMarket extends commonBank {
 		if (maxW > timesWdrwn) {
 			tempCustomer.setBalance((tempCustomer.getBalance() - amount));
 			timesWdrwn++;
-			System.out.println("You can withdraw your money " + (6 - timesWdrwn)
-					+ " more time(s).");
+			System.out.println("You can withdraw your money "
+					+ (6 - timesWdrwn) + " more time(s).");
 		} else {
 			System.out.println("You can no longer withdraw your money.");
 		}
@@ -66,8 +66,9 @@ public class moneyMarket extends commonBank {
 
 	public void issueCard() {
 
-		System.out.println("A card has been issued for customer ID: " + tempCustomer.getCustomerID());
-		
+		System.out.println("A card has been issued for customer ID: "
+				+ tempCustomer.getCustomerID());
+
 	}
 
 	public void deposit(Double amount) {

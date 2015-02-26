@@ -1,36 +1,66 @@
 public class CD extends commonBank {
 
+	private String withdrawalPolicy = "Withdrawal Policy for Checking: No withdrawals allowed until contract has run out";
+	private Double interestRate = .031;
+
 	public CD() {
+		System.out.println("A CD Account Was Created");
+		assignCustomerID();
+	}
+
+	public CD(String firstName, String lastName, int creditScore,
+			String phoneNumber, String SocialSecurity, String adress) {
+
+		System.out.println("A CD Account Was Created");
+		assignCustomerID();
+		assignAgent();
+		issueCard();
+		setSocialSecurity(SocialSecurity);
+		tempCustomer.setFirstName(firstName);
+		tempCustomer.setLastName(lastName);
+		tempCustomer.setPhoneNumber(phoneNumber);
+		tempCustomer.setAddress(adress);
+		tempCustomer.setCreditScore(creditScore);
+		tempCustomer.setBalance(0.0);
+	}
+
+	public void issueCard() {
+		System.out.println("A card has been issued for customer ID: "
+				+ tempCustomer.getCustomerID());
 
 	}
 
-	public void issureCard() {
-		// TODO Auto-generated method stub
+	public Double getFutureBalance(int months) { // calculates based on interest
 
-	}
+		Double futureBalance;
+		futureBalance = tempCustomer.getBalance()
+				+ (months * interestRate * tempCustomer.getBalance());
 
-	public void getFutureBalance() {
-		// TODO Auto-generated method stub
+		return futureBalance;
 
 	}
 
 	public String getWithdrawalPolicy() {
-		return null;
-		// TODO Auto-generated method stub
+
+		return withdrawalPolicy;
+	}
+
+	public void deposit(Double amount) {
+		System.out
+				.println("Your deposit of $" + amount + " has been rejected, the account type CD does not allow for deposits");
 
 	}
 
-	public void deposit() {
-		// TODO Auto-generated method stub
+	public void withdraw(Double amount) {
 
+		System.out
+				.println("Your withdrawal of $" + amount + " has been blocked, the account type CD does not allow for withdrawals");
 	}
 
-	public void withdraw(int amount) {
-		// TODO Auto-generated method stub
+	public String toString() {
+		return tempCustomer.toString();
 
 	}
-
-
 
 	public void assignCustomerID() {
 
@@ -38,5 +68,4 @@ public class CD extends commonBank {
 		tempCustomer.setCustomerID("CD-" + rand);
 
 	}
-
 }

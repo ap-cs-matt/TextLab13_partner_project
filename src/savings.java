@@ -1,33 +1,59 @@
 public class savings extends commonBank {
 
-	public savings() {
+	private String withdrawalPolicy = "Withdrawal Policy for Checking: There is a $25 penalalty for withdrawing money";
+	private Double interestRate = .001;
 
+	public savings() {
+		System.out.println("A Savings Account Was Created");
+		assignCustomerID();
+	}
+
+	public savings(String firstName, String lastName, int creditScore,
+			String phoneNumber, String SocialSecurity, String adress) {
+
+		System.out.println("A Savings Account Was Created");
+		assignCustomerID();
+		assignAgent();
+		issueCard();
+		setSocialSecurity(SocialSecurity);
+		tempCustomer.setFirstName(firstName);
+		tempCustomer.setLastName(lastName);
+		tempCustomer.setPhoneNumber(phoneNumber);
+		tempCustomer.setAddress(adress);
+		tempCustomer.setCreditScore(creditScore);
+		tempCustomer.setBalance(0.0);
 	}
 
 	public void issueCard() {
-		// TODO Auto-generated method stub
+		System.out.println("A card has been issued for customer ID: "
+				+ tempCustomer.getCustomerID());
 
 	}
 
-	public void getFutureBalance() {
-		// TODO Auto-generated method stub
+	public Double getFutureBalance(int months) { // calculates based on interest
+
+		Double futureBalance;
+		futureBalance = tempCustomer.getBalance()
+				+ (months * interestRate * tempCustomer.getBalance());
+
+		return futureBalance;
 
 	}
 
 	public String getWithdrawalPolicy() {
-		return null;
-		// TODO Auto-generated method stub
+
+		return withdrawalPolicy;
+	}
+
+	public void deposit(Double amount) {
+		tempCustomer.setBalance(tempCustomer.getBalance() + amount);
+		System.out.println("Thank you for your desposit of: $" + amount);
 
 	}
 
-	public void deposit() {
-		// TODO Auto-generated method stub
+	public void withdraw(Double amount) {
 
-	}
-
-	public void withdraw(int amount) {
-		// TODO Auto-generated method stub
-
+		tempCustomer.setBalance((tempCustomer.getBalance() - amount));
 	}
 
 	public void assignCustomerID() {
@@ -37,24 +63,9 @@ public class savings extends commonBank {
 
 	}
 
+	public String toString() {
+		return tempCustomer.toString();
 
-
-	@Override
-	public Double getFutureBalance(int months) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void deposit(Double amount) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void withdraw(Double amount) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
