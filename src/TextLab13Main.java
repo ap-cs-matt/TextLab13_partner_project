@@ -1,5 +1,7 @@
 import java.util.*;
 
+//Group Members: Matthew Pearce, Aleksa Deric, Alex Sun
+
 public class TextLab13Main {
 
 	public static void main(String[] args) {
