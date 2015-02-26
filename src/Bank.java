@@ -4,15 +4,11 @@ public abstract interface Bank {
 
 	public String getBankInfo();
 
-	public String setBankInfo();
-
 	public String getInsurancePolicy();
 
 	public int getCreditScore();
 
 	public String getAddress();
-
-	public String getBankAccountNum();
 
 	public String getPhoneNum();
 

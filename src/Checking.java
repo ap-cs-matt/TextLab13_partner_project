@@ -1,6 +1,6 @@
 public class Checking extends commonBank {
 
-	private String withdrawalPolicy = "Withdrawal Policy for Checking: There is no penalalty fir withdrawing money";
+	private String withdrawalPolicy = "Withdrawal Policy for Checking: There is no penalalty for withdrawing money";
 	private Double interestRate = .0001;
 
 	public Checking() {
@@ -46,6 +46,7 @@ public class Checking extends commonBank {
 
 	public void deposit(Double amount) {
 		tempCustomer.setBalance(tempCustomer.getBalance() + amount);
+		System.out.println("Thank you for your desposit of: $" + amount);
 
 	}
 

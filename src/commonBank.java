@@ -5,15 +5,12 @@ public abstract class commonBank implements Bank {
 	Customer tempCustomer = new Customer();
 
 	public String getBankInfo() {
-		return null;
+		return "The Address for the bank is: 100 Federal St. Boston, MA\nThe Phone number for the bank is: 617-343-5646";
 	}
 
-	public String setBankInfo() {
-		return null;
-	}
 
 	public String getInsurancePolicy() {
-		return null;
+		return "All accounts at this bank are insured for up to $5,000,000 in theft or loss of funds";
 	}
 
 	public void assignAgent() {
@@ -35,17 +32,13 @@ public abstract class commonBank implements Bank {
 	}
 
 	public String getAddress() {
-		return null;
+		return "The Address for the bank is: 100 Federal St. Boston, MA";
 
 	}
 
-	public String getBankAccountNum() {
-		return null;
-
-	}
 
 	public String getPhoneNum() {
-		return null;
+		return "The Phone number for the bank is: 617-343-5646";
 
 	}
 

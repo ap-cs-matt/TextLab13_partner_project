@@ -15,6 +15,7 @@ public class moneyMarket extends commonBank {
 		System.out.println("A Money Market Account Was Created\n");
 		assignCustomerID();
 		assignAgent();
+		issueCard();
 		setSocialSecurity(SocialSecurity);
 		tempCustomer.setFirstName(firstName);
 		tempCustomer.setLastName(lastName);
@@ -42,8 +43,8 @@ public class moneyMarket extends commonBank {
 		if (maxW > timesWdrwn) {
 			tempCustomer.setBalance((tempCustomer.getBalance() - amount));
 			timesWdrwn++;
-			System.out.println("You can withdraw your money" + (6 - timesWdrwn)
-					+ "more time(s).");
+			System.out.println("You can withdraw your money " + (6 - timesWdrwn)
+					+ " more time(s).");
 		} else {
 			System.out.println("You can no longer withdraw your money.");
 		}
@@ -72,6 +73,7 @@ public class moneyMarket extends commonBank {
 	public void deposit(Double amount) {
 
 		tempCustomer.setBalance(tempCustomer.getBalance() + amount);
+		System.out.println("Thank you for your desposit of: $" + amount);
 	}
 
 }
